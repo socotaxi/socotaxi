@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+header.hero {
+    background: url('https://source.unsplash.com/featured/?taxi,city') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header.hero .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcd00;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.features {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.feature {
+    max-width: 300px;
+}
+
+.feature img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about,
+.contact {
+    padding: 40px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #ffcd00;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header.hero {
+        padding: 60px 20px;
+    }
+}
