@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOCOTAXI - Gestion de taxis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #fff; color: #1a1a1a; }
+    header { background: #0076c0; color: white; padding: 20px; text-align: center; }
+    nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; margin-top: 10px; }
+    nav a { color: white; text-decoration: none; font-weight: 600; }
+    .hero { padding: 60px 20px; background: #eaf6ff; text-align: center; }
+    .hero h1 { font-size: 36px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 20px; }
+    .hero button { background: #0076c0; color: white; padding: 12px 24px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; }
+    .section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .section h2 { text-align: center; margin-bottom: 40px; font-size: 28px; }
+    .offers { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .offer-card { border: 1px solid #ccc; border-radius: 8px; padding: 20px; width: 300px; background: #f9f9f9; }
+    .offer-card h3 { margin-bottom: 10px; }
+    .offer-card ul { list-style: none; padding-left: 0; margin-top: 10px; }
+    .offer-card ul li::before { content: '✔ '; color: #0076c0; margin-right: 6px; }
+    .features { display: flex; justify-content: center; gap: 40px; margin-top: 40px; text-align: center; }
+    .feature { max-width: 300px; }
+    .testimonials { background: #f1f1f1; padding: 40px 20px; text-align: center; }
+    .testimonial { max-width: 600px; margin: auto; font-style: italic; margin-top: 20px; }
+    form { display: flex; flex-direction: column; gap: 12px; max-width: 400px; margin: auto; padding: 20px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    footer { background: #0076c0; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo_soco.jpg" alt="Logo Socotaxi" style="height: 50px;">
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#offres">Offres</a></li>
+        <li><a href="#pourquoi">Pourquoi Socotaxi</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Transformez votre taxi en investissement !</h1>
+    <p>Professionnalisez la gestion de votre taxi pour booster vos revenus.</p>
+    <button>Obtenir plus de renseignements</button>
+  </section>
+
+  <section class="section" id="offres">
+    <h2>Offres</h2>
+    <div class="offers">
+      <div class="offer-card">
+        <h3>Formule 1</h3>
+        <p><strong>25 000 FCFA / mois</strong></p>
+        <ul>
+          <li>Mise à disposition du chauffeur</li>
+          <li>Gestion du chauffeur</li>
+        </ul>
+      </div>
+      <div class="offer-card">
+        <h3>Formule 2</h3>
+        <p><strong>47 000 FCFA / mois</strong></p>
+        <ul>
+          <li>Mise à disposition du chauffeur</li>
+          <li>Gestion du chauffeur</li>
+          <li>Suivi des recettes</li>
+          <li>Rapport</li>
+        </ul>
+      </div>
+      <div class="offer-card">
+        <h3>Formule 3 (réseau PNR-TAXI)</h3>
+        <p><strong>69 000 FCFA / mois</strong></p>
+        <ul>
+          <li>Mise à disposition du chauffeur</li>
+          <li>Gestion du chauffeur</li>
+          <li>Suivi des recettes</li>
+          <li>Maintenance mécanique</li>
+          <li>Assistance & conseils</li>
+          <li>Gardiennage / Lavage</li>
+          <li>GPS</li>
+          <li>Rapport détaillé</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pourquoi">
+    <h2>Pourquoi Socotaxi</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>✅ Sérieux</h3>
+        <p>Un suivi rigoureux et une équipe engagée.</p>
+      </div>
+      <div class="feature">
+        <h3>✅ Savoir-faire</h3>
+        <p>Une expérience concrète sur le terrain.</p>
+      </div>
+      <div class="feature">
+        <h3>✅ Sérénité</h3>
+        <p>Revenus stables, transparence, tranquillité d’esprit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="temoignages">
+    <h2>Témoignages</h2>
+    <div class="testimonial">
+      <p><strong>"Grâce à SOCOTAXI, je n’ai plus à me soucier de la gestion quotidienne de mon taxi. L’équipe est fiable et transparente."</strong></p>
+      <p>— David M., Pointe-Noire</p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Prenez contact dès aujourd’hui</h2>
+    <form>
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Adresse e-mail" required>
+      <textarea rows="4" placeholder="Message"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 SOCOTAXI · Pointe-Noire · Contact : 05 078 76 24
+  </footer>
+</body>
+</html>
